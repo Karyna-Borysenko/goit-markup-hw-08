@@ -296,6 +296,11 @@ img {
 .speciality {
   padding-top: 0;
 }
+@media screen and (max-width: 1199px) {
+  .speciality {
+    display: none;
+  }
+}
 
 .speciality__title {
   margin-bottom: var(--title-gap);
