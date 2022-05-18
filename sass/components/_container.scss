@@ -1,7 +1,19 @@
 .container {
-  width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  @include media(480px) {
+    max-width: 480px;
+  }
+
+  @include media(768px) {
+    max-width: 768px;
+  }
+
+  @include media(1200px) {
+    max-width: 1200px;
+  }
 }

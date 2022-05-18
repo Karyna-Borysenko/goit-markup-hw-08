@@ -78,16 +78,31 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo {
@@ -221,21 +236,36 @@ img {
 
 /*------------Секция Наши преимущества------------*/
 .benefits__list {
-  display: flex;
+  margin-bottom: -30px;
+}
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .benefits__item {
-  width: 270px;
+  margin-bottom: 30px;
 }
-
-.benefits__item:not(:last-child) {
-  margin-right: var(--main-gap);
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    width: calc(50% - 30px);
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: calc(25% - 30px);
+  }
 }
 
 .benefits__thumb {
   margin-bottom: var(--main-gap);
-  padding: 25px 100px;
-  width: 270px;
+  padding: 25px 0;
+  width: 100%;
+  text-align: center;
   background-color: #f5f4fa;
   border-radius: 4px;
 }
@@ -246,6 +276,11 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-color);
+}
+@media screen and (max-width: 480px) {
+  .benefits__title-secondary {
+    text-align: center;
+  }
 }
 
 .benefits__text {
