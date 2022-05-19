@@ -510,6 +510,19 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    align-items: baseline;
+  }
+}
 
 .footer__logo {
   display: inline-block;
@@ -520,9 +533,11 @@ img {
   color: var(--used-color);
 }
 
-.footer__contacts {
-  margin-bottom: 60px;
-  text-align: center;
+@media screen and (max-width: 767px) {
+  .footer__contacts {
+    margin-bottom: 60px;
+    text-align: center;
+  }
 }
 
 .footer__item:not(:last-child) {
@@ -550,9 +565,16 @@ img {
   color: var(--used-color);
 }
 
-.footer-join {
-  margin-bottom: 60px;
-  text-align: center;
+@media screen and (max-width: 767px) {
+  .footer-join {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-join {
+    margin-left: 70px;
+  }
 }
 
 .footer-join__title {
@@ -593,8 +615,15 @@ img {
 }
 
 /*------------Форма в Footer------------*/
-.footer-form__field {
-  text-align: center;
+@media screen and (max-width: 767px) {
+  .footer-form__field {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__field {
+    margin-left: auto;
+  }
 }
 
 .footer-form__text {
@@ -604,6 +633,12 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--used-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__wrap {
+    display: flex;
+  }
 }
 
 .footer-form__input {
@@ -619,7 +654,17 @@ img {
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
   transition: border var(--transition-duration) var(--transition-timing-function);
-  margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .footer-form__input {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__input {
+    margin-right: 12px;
+    width: 358px;
+  }
 }
 .footer-form__input:hover, .footer-form__input:focus {
   border: 1px solid rgba(33, 149, 243, 0.5);
