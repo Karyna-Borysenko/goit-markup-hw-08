@@ -29,6 +29,7 @@
   line-height: 1.63;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  background-color: #f5f4fa;
 
   transition: color var(--transition-duration) var(--transition-timing-function),
     background-color var(--transition-duration)
@@ -45,11 +46,7 @@
 }
 
 .portfolio__list {
-  margin-right: calc(-1 * var(--main-gap));
-  margin-bottom: calc(-1 * var(--main-gap));
-  @media screen and (max-width: 767px) {
-    margin-top: 40px;
-  }
+  margin-top: var(--main-gap);
   @include media(768px) {
     display: flex;
     flex-wrap: wrap;
