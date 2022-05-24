@@ -1,21 +1,21 @@
 /*------------Секция Наши преимущества------------*/
 
 .benefits__list {
-  margin-bottom: -30px;
+  margin-bottom: calc(-1 * var(--main-gap));
 
   @include media(768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
+    margin-left: calc(-1 * var(--main-gap));
   }
 }
 
 .benefits__item {
-  margin-bottom: 30px;
+  margin-bottom: var(--main-gap);
 
   @include media(768px) {
     width: calc(100% / 2 - 30px);
-    margin-left: 30px;
+    margin-left: var(--main-gap);
   }
 
   @include media(1200px) {
